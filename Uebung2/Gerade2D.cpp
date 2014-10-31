@@ -5,6 +5,9 @@
 Gerade2D::Gerade2D(Vector2D n) :m_Normale(n), m_Aufpunkt(Vector2D(0,0))
 {
 }
+Gerade2D::Gerade2D(Vector2D n, Vector2D m) : m_Normale(n), m_Aufpunkt(m){
+
+}
 
 float Gerade2D::gerichteterAbstand(Vector2D x) const{
 	float result = 0.0;
@@ -22,7 +25,7 @@ bool Gerade2D::aufGerade(Vector2D&x) const{
  Vector2D& Gerade2D::aufpunkt()const{
 	return m_Aufpunkt;
 }
- Vector2D& Gerade2D::normale() const{
+ Vector2D& Gerade2D::normale()const {
 	return m_Normale;
 }
 

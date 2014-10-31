@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <math.h>
 #include "Gerade2D.h"

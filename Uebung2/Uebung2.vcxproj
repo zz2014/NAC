@@ -81,6 +81,7 @@
     <ClInclude Include="Gerade2D.h" />
     <ClInclude Include="Matrix.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="Test.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="Vector2D.h" />
   </ItemGroup>
