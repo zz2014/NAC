@@ -10,5 +10,6 @@ public:
 	float betrag() const;
 	float skalarprodukt(Vector)const;
 	float winkel(Vector)const;
+	void sub(Vector);
 };
 #endif

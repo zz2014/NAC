@@ -16,18 +16,25 @@ float Gerade2D::gerichteterAbstand(Vector2D x) const{
 	result = (m_Normale.nom()).skalarprodukt(x);
 	return result;
 }
-bool Gerade2D::aufGerade(Vector2D&x) const{
+bool Gerade2D::aufGerade(const Vector2D&x) const{
 	if (fabs(gerichteterAbstand(x)) == 0)
 		return true;
 	return false;
 }
 
- Vector2D& Gerade2D::aufpunkt()const{
+ Vector2D& Gerade2D::aufpunkt(){
 	return m_Aufpunkt;
 }
- Vector2D& Gerade2D::normale()const {
+ Vector2D& Gerade2D::normale(){
 	return m_Normale;
 }
+Vector2D const& Gerade2D::aufpunkt()const{
+	 return m_Aufpunkt;
+ }
+Vector2D const&  Gerade2D::normale()const {
+	 return m_Normale;
+ }
+
 
 Gerade2D::~Gerade2D()
 {

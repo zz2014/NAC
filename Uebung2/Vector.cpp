@@ -13,6 +13,11 @@ Vector::Vector(int m) : Matrix(m,1)
 Vector::~Vector()
 {
 }
+void Vector::sub(Vector v){
+	m_Element[0] = m_Element[0] - v.m_Element[0];
+	m_Element[1] = m_Element[1] - v.m_Element[1];
+
+}
 
 float Vector::skalarprodukt(Vector v) const{
 	if (v.m_Spalten!= m_Spalten|| v.m_Zeilen!=m_Zeilen)

@@ -8,10 +8,9 @@ public:
 	Vector2D(float, float);
 	Vector2D();
 	virtual ~Vector2D();
-	void add(Vector2D v) const;
-	void sub(Vector2D) const;
+	void add(Vector2D) ;
 	Vector2D nom()const;
-	void kopiereIn(Vector2D *zielvar);
+	void kopiereIn(Vector2D *zielvar)const;
 };
 void tausche(Vector2D*, Vector2D*);
 #endif

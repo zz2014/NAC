@@ -2,7 +2,7 @@
 #include "Matrix.h"
 #include "Vector2D.h"
 #include "Gerade2D.h"
-#include "Test.h"
+
 int main(){
 	//Matrix myMatrix;
 	//myMatrix.ausgabe();
@@ -69,7 +69,8 @@ int main(){
 	test.normale() = Vector2D(3, 3);
 	test.normale().ausgabe();
 
-	const Gerade2D g(Vector2D(-3, -4), Vector2D(2, 3));
+	void geradenTest(const Gerade2D& g);
+	Gerade2D g(Vector2D(-3, -4), Vector2D(2, 3));
 	geradenTest(g);
 	return 0;
 }

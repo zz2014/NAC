@@ -26,6 +26,5 @@ void geradenTest(const Gerade2D& g)
 	Gerade2D g2(Vector2D(7, 7));
 	g2.normale() = g.normale();
 	TEST(fabs(g2.normale().betrag() - 5) < 0.0001);
-
 	TEST(g2.aufGerade(g.aufpunkt()) == false);
 }

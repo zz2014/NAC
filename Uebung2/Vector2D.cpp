@@ -9,24 +9,21 @@ Vector2D::Vector2D(float x, float y): Vector(2){
 	m_Element[1] = y;
 }
 
-void Vector2D::add(Vector2D v) const{
+void Vector2D::add(Vector2D v){
 	m_Element[0] = m_Element[0] + v.m_Element[0];
 	m_Element[1] = m_Element[1] + v.m_Element[1];
 
 }
 
-void Vector2D::sub(Vector2D v) const{
-	m_Element[0] = m_Element[0] - v.m_Element[0];
-	m_Element[1] = m_Element[1] - v.m_Element[1];
 
-}
 Vector2D Vector2D::nom() const{
 	
 	float b = this->betrag();
 	Vector2D result(m_Element[0] / b, m_Element[1] / b);
 	return result;
 }
-void Vector2D::kopiereIn(Vector2D *zielvar){
+
+void Vector2D::kopiereIn(Vector2D *zielvar) const{
 	(*zielvar).m_Element[0] = m_Element[0];
 	(*zielvar).m_Element[1] = m_Element[1];
 	
